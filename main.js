@@ -27,7 +27,7 @@ camera.position.z = 5;
 const orbit = new OrbitControls(camera, canvas)
 
 const dracoloader = new DRACOLoader()
-dracoloader.setDecoderPath('node_modules/three/examples/jsm/libs/draco/')
+dracoloader.setDecoderPath('./draco/')
 
 const loader = new GLTFLoader()
 loader.setDRACOLoader(dracoloader)
