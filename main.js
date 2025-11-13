@@ -221,7 +221,7 @@ renderer.toneMappingExposure = 0
 const premgenereator = new three.PMREMGenerator(renderer)
 premgenereator.compileEquirectangularShader()
 const exrloader = new EXRLoader()
-exrloader.load('public/exr/sunrise.exr', function (texture) {
+exrloader.load('/exr/sunrise.exr', function (texture) {
     // Prefilter for PBR materials
     const envMap = premgenereator.fromEquirectangular(texture).texture;
 
